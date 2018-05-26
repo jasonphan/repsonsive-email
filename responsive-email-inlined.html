@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Email</title>
+    <style>
+      a:visited{color:white}
+    </style>
+    <style type="text/css">
+      /* Applies to screen width of 600px or less */
+      @media screen and (max-width: 600px) {
+        .responsive-table {
+          width: 100% !important;
+        }
+        /* To make options responsive */
+        .responsive-options {
+          width: 100% !important;
+          padding: 15px 30px;
+        }
+        /* Change contact button to be stretched */
+        .btn-contact {
+          width: 100% !important;
+          border-radius: 0%;
+          font-size: 16px;
+        }
+        /* Display the hr in the header */
+        .hr-header {
+            display: inline-block !important;
+            width: 90% !important;
+        }
+        .header {
+            text-align: center !important;
+        }
+        /* Center social icons */
+        .div-icons {
+            float: none !important;
+            text-align: center !important;
+        }
+       .contact {
+            height: auto !important;
+        }
+        /* Hide contact message */
+        .contact-msg {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body style='padding:0px;margin:0px;font-family:"Arial", Helvetica, sans-serif;font-size:16px;'>
+    <!-- FULL WIDTH CONTAINER -->
+    <table class="container" style="border-spacing:0px;padding:0px;border:0px;width:100%;">
+      <tr>
+        <th align="center" style="font-weight:normal;">
+          <!-- 600px CONTAINER -->
+          <table class="responsive-table" style="border-spacing:0px;padding:0px;border:0px;width:600px;">
+            <!-- Preheader -->
+            <tr>
+              <th class="preheader" style="font-weight:normal;visibility:hidden;font-size:1px;color:#FFFFFF;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;display:none !important;">
+                This is a responsive email.
+                            </th>
+            </tr>
+            <!-- Header -->
+            <tr>
+              <th class="header" style="font-weight:normal;width:600px;height:100px;background-color:#34495E;text-align:left;">
+                <span class="headline" style="color:white;font-size:30px;font-weight:bold;padding:20px;display:inline-block;">Company A</span>
+                <hr class="hr-header" style="width:90%;border:1px solid white;display:none;">
+                <div class="div-icons" style="float:right;padding:20px;">
+                  <a href="#" style="text-decoration:none;color:white;"><img src="https://i.imgur.com/MGOZk71.png" alt="Facebook" style="border-radius:50%;height:30px;width:30px;padding:5px;"></a>
+                  <a href="#" style="text-decoration:none;color:white;"><img src="https://i.imgur.com/ldxgRpz.png" alt="Twitter" style="border-radius:50%;height:30px;width:30px;padding:5px;"></a>
+                  <a href="#" style="text-decoration:none;color:white;"><img src="https://i.imgur.com/t8YxeUm.png" alt="RSS" style="border-radius:50%;height:30px;width:30px;padding:5px;"></a>
+                </div>
+              </th>
+            </tr>
+            <!-- Heading -->
+            <tr>
+              <th class="heading" style="font-weight:normal;padding:20px 0px 10px 10px;font-size:24px;font-weight:bold;text-align:left;">
+                Heading 1
+              </th>
+            </tr>
+            <!-- Content -->
+            <tr>
+              <th class="content" style="font-weight:normal;padding:10px;text-align:left;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum neque ut mattis. Cras vitae pretium enim, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.
+                <br>
+                <ul>
+                  <li style="padding:0px 0px 10px 20px;">Super Interesting Bullet Point 1</li>
+                  <li style="padding:0px 0px 10px 20px;">Super Interesting Bullet Point 2</li>
+                  <li style="padding:0px 0px 10px 20px;">Super Interesting Bullet Point 3</li>
+                </ul>
+              </th>
+            </tr>
+            <tr>
+              <th style="font-weight:normal;">
+                <!-- Basic Option -->
+                <table class="responsive-options" style="border-spacing:0px;padding:0px;border:0px;width:280px;padding-bottom:20px;float: left;">
+                  <tr>
+                    <th class="options-header" style="font-weight:normal;color:white;height:95px;text-align:center;background-color: #4FC1E9;">
+                      <span class="price" style="font-size:24px;font-weight:bold;">$299</span>
+                      <br>
+                      <br>
+                      <span>per month</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="options-body" style="font-weight:normal;height:240px;text-align:center;background-color: #D7F1FA;">
+                      <span class="options" style="font-size:20px;font-weight:bold;">Basic</span>
+                      <br>
+                      <br>
+                      <span>Lots of clients & users</span>
+                      <br>
+                      <br>
+                      <hr class="hr-basic" style="width:90%;border:0.5px solid #AAE1F4;">
+                      <br>
+                      <span>250 SKU's</span>
+                      <br>
+                      <br>
+                      <span>1 GB Storage</span>
+                      <br>
+                      <br>
+                      <span>3,5% transaction fee</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="options-footer" style="font-weight:normal;padding:20px 0px 20px 0px;text-align:center;background-color: #E6E9ED;">
+                      <button class="btn-basic" style="color:white;border:none;text-align:center;cursor:pointer;height:44px;background:#4FC1E9;padding:10px 5px;">Try a Week</button>
+                    </th>
+                  </tr>
+                </table>
+                <!-- Unlimited Option -->
+                <table class="responsive-options" style="border-spacing:0px;padding:0px;border:0px;width:280px;padding-bottom:20px;float: right;">
+                  <tr>
+                    <th class="options-header" style="font-weight:normal;color:white;height:95px;text-align:center;background-color:#F6BB42;">
+                      <span class="price" style="font-size:24px;font-weight:bold;">$499</span>
+                      <br>
+                      <br>
+                      <span>per month</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="options-body" style="font-weight:normal;height:240px;text-align:center;background-color: #FFFAED;">
+                      <span class="options" style="font-size:20px;font-weight:bold;">Unlimited</span>
+                      <br>
+                      <br>
+                      <span>Lots of clients & users</span>
+                      <br>
+                      <br>
+                      <hr class="hr-unlimited" style="width:90%;border:0.5px solid #FFEBBA;">
+                      <br>
+                      <span>Unlimited SKU's</span>
+                      <br>
+                      <br>
+                      <span>20 GB Storage</span>
+                      <br>
+                      <br>
+                      <span>3,5% transaction fee</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="options-footer" style="font-weight:normal;padding:20px 0px 20px 0px;text-align:center;background-color: #E6E9ED;">
+                      <button class="btn-unlimited" style="color:white;border:none;text-align:center;cursor:pointer;height:44px;background:#F6BB42;padding:10px 5px;">Try a Week</button>
+                    </th>
+                  </tr>
+                </table>
+              </th>
+            </tr>
+            <!-- Contact Message and Button -->
+            <tr>
+              <th class="contact" style="font-weight:normal;text-align:center;height:130px;">
+                <span class="contact-msg" style="font-size:22px;font-weight:bold;">Want to learn more? Contact Us Today!</span>
+                <br>
+                <br>
+                <button class="btn-contact" style="color:white;border:none;text-align:center;cursor:pointer;height:44px;background:#8CC152;padding:15px 45px;border-radius:0px;"><strong>Contact Us</strong></button>
+              </th>
+            </tr>
+            <!-- Footer -->
+            <tr>
+              <th class="footer" style="font-weight:normal;color:white;height:50px;text-align:center;background-color: #34495E;">
+                <a href="#" style="text-decoration:none;color:white;">CompanyA.com</a> | <a href="#" style="text-decoration:none;color:white;">Privacy Policy</a> | <a href="#" style="text-decoration:none;color:white;">Unsubscribe</a>
+              </th>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>
